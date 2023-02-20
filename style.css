@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +16,8 @@ body {
 
 section {
     background-attachment: fixed;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 span {
@@ -95,10 +101,6 @@ main {
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
 .about {
     background-image: url(./Image/60--lines-1920x1080.png);
     height: 100vh;
@@ -127,7 +129,6 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 80px 0;
-
 }
 
 .abouts img {
@@ -197,7 +198,7 @@ ul.social-media {
 }
 
 ul.social-media li {
-    display: inline-block;
+    display: inline-flex;
     margin-right: 50px;
 }
 
@@ -214,7 +215,7 @@ ul.social-media li:last-child {
     transition: transform 0.3s ease-in-out;
 }
 
-.social-media a i {
+.social-media a {
     font-size: larger;
     transition: all 0.3;
 }
@@ -228,17 +229,27 @@ ul.social-media li:last-child {
     height: 100vh;
     margin: 0;
     padding: 0;
-    display: block;
+    display: flow-root;
+    
 }
 
 .project h3 {
-	margin-top: 0;
+    padding: 25px;
+    color: rgb(95, 228, 155);
 }
 
 .project a {
 	display: flex;
 	text-align: right;
 	margin-top: 10px;
+}
+
+.project h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #0fa58c;
+    font-weight: 700;
 }
 
 footer {
