@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url(./Image/60--lines-1920x1080.png);
+}
+
+section {
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+span {
+    color: cadetblue;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    align-items: left;
+    position: relative;
+    justify-content: space-between;
+    text-decoration: none;
+    display: flex;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    display: inline-block;
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #ccc;
+    justify-content: left;
+    display: flex;
+    position: relative;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3 ease-out;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
